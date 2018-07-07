@@ -4,6 +4,11 @@ body
   background-color: #f5f5f5
   p, h1, h2, h3, h4, h5, h6
     cursor: default
+  .pt30
+    padding-top: 30px
+  .pb30
+    padding-bottom: 30px
+
   .light
     background-color: #f8f8f8
 
@@ -128,41 +133,32 @@ body
     background-color: #10c9c3
     color: #fff
     .number_item_wrap
+      margin: 0 auto
+      text-align: center
+      .number_img
+        display: inline-block
+        background-image: url(../img/iconset_numbers.png)
+        height: 41px
+        width: 41px
       .number_img_1
-        background-image: url(../img/iconset_numbers.png)
         background-position: 0 0
-        height: 41px
-        width: 41px
-        margin: 25% 0 25% 10%
       .number_img_2
-        background-image: url(../img/iconset_numbers.png)
         background-position: -85px 0
-        height: 41px
-        width: 41px
-        margin: 25% 0 25% 10%
       .number_img_3
-        background-image: url(../img/iconset_numbers.png)
         background-position: -176px 0
-        height: 41px
-        width: 41px
-        margin: 25% 0 25% 10%
       .number_img_4
-        background-image: url(../img/iconset_numbers.png)
         background-position: -264px 0
-        height: 41px
-        width: 41px
-        margin: 25% 0 25% 10%
       p
         font-size: 16px
-        margin: -40% 0 0 35%
-        @media screen and (max-width: 1200px)
+        //margin: -40% 0 0 35%
+        /*@media screen and (max-width: 1200px)
           margin: -45% 0 0 35%
           @media screen and (max-width: 990px)
             margin: -38% 0 0 35%
             @media screen and (max-width: 766px)
               margin: -33% 0 0 35%
 
-      h1
+      /*h1
         text-transform: uppercase
         margin: 3% 0 25% 35%
         font-size: 11px
@@ -229,9 +225,9 @@ body
       overflow: hidden
       iframe
         top: 0
-        left: 5%
-        width: 90%
-        height: 90%
+        left: 10%
+        width: 80%
+        height: 80%
         position: absolute
 
   .services
@@ -303,19 +299,14 @@ body
           margin: auto
 
   .testimonials_wrap
+    position: relative
     background-color: #10c9c3
-    min-width: 500px
-    @media screen and (max-width: 512px)
-      display: none
     .testimonials
       text-align: center
-      padding-top: 170px
+      padding-top: 40px
       margin: 0 auto
-      width: 100%
-      height: 100%
       .testimonials_content
         margin: 0 auto
-        max-width: 80%
         text-align: center
         q
           font-size: 24px
@@ -323,10 +314,10 @@ body
         p
           font-size: 12px
           color: #fff
-          padding: 30px 0 100px 0
+          padding: 30px 0 40px 0
+
   .clients
     padding-top: 45px
-    min-height: 170px
     @media screen and (max-width: 700px)
       display: none
     .client

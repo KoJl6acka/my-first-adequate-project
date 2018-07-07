@@ -4,6 +4,10 @@ body {
   background-color: #f5f5f5; }
   body p, body h1, body h2, body h3, body h4, body h5, body h6 {
     cursor: default; }
+  body .pt30 {
+    padding-top: 30px; }
+  body .pb30 {
+    padding-bottom: 30px; }
   body .light {
     background-color: #f8f8f8; }
   body .pointer {
@@ -122,49 +126,35 @@ body {
   body .numbers {
     background-color: #10c9c3;
     color: #fff; }
-    body .numbers .number_item_wrap .number_img_1 {
-      background-image: url(../img/iconset_numbers.png);
-      background-position: 0 0;
-      height: 41px;
-      width: 41px;
-      margin: 25% 0 25% 10%; }
-    body .numbers .number_item_wrap .number_img_2 {
-      background-image: url(../img/iconset_numbers.png);
-      background-position: -85px 0;
-      height: 41px;
-      width: 41px;
-      margin: 25% 0 25% 10%; }
-    body .numbers .number_item_wrap .number_img_3 {
-      background-image: url(../img/iconset_numbers.png);
-      background-position: -176px 0;
-      height: 41px;
-      width: 41px;
-      margin: 25% 0 25% 10%; }
-    body .numbers .number_item_wrap .number_img_4 {
-      background-image: url(../img/iconset_numbers.png);
-      background-position: -264px 0;
-      height: 41px;
-      width: 41px;
-      margin: 25% 0 25% 10%; }
-    body .numbers .number_item_wrap p {
-      font-size: 16px;
-      margin: -40% 0 0 35%; }
-      @media screen and (max-width: 1200px) {
-        body .numbers .number_item_wrap p {
-          margin: -45% 0 0 35%; } }
-  @media screen and (max-width: 1200px) and (max-width: 990px) {
-    body .numbers .number_item_wrap p {
-      margin: -38% 0 0 35%; } }
-
-  @media screen and (max-width: 1200px) and (max-width: 990px) and (max-width: 766px) {
-    body .numbers .number_item_wrap p {
-      margin: -33% 0 0 35%; } }
-
-    body .numbers .number_item_wrap h1 {
-      text-transform: uppercase;
-      margin: 3% 0 25% 35%;
-      font-size: 11px;
-      font-weight: 300; }
+    body .numbers .number_item_wrap {
+      margin: 0 auto;
+      text-align: center;
+      /*h1
+       * text-transform: uppercase
+       * margin: 3% 0 25% 35%
+       * font-size: 11px
+       * font-weight: 300 */ }
+      body .numbers .number_item_wrap .number_img {
+        display: inline-block;
+        background-image: url(../img/iconset_numbers.png);
+        height: 41px;
+        width: 41px; }
+      body .numbers .number_item_wrap .number_img_1 {
+        background-position: 0 0; }
+      body .numbers .number_item_wrap .number_img_2 {
+        background-position: -85px 0; }
+      body .numbers .number_item_wrap .number_img_3 {
+        background-position: -176px 0; }
+      body .numbers .number_item_wrap .number_img_4 {
+        background-position: -264px 0; }
+      body .numbers .number_item_wrap p {
+        font-size: 16px;
+        /*@media screen and (max-width: 1200px)
+         * margin: -45% 0 0 35%
+         * @media screen and (max-width: 990px)
+         *   margin: -38% 0 0 35%
+         *   @media screen and (max-width: 766px)
+         *     margin: -33% 0 0 35% */ }
   body .work .container {
     width: 100%; }
     body .work .container .gallery .col-md-3 {
@@ -221,9 +211,9 @@ body {
       overflow: hidden; }
       body .work_process .video_container iframe {
         top: 0;
-        left: 5%;
-        width: 90%;
-        height: 90%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
         position: absolute; }
   body .services {
     padding-top: 5%;
@@ -290,20 +280,14 @@ body {
       height: 46px;
       margin: auto; }
   body .testimonials_wrap {
-    background-color: #10c9c3;
-    min-width: 500px; }
-    @media screen and (max-width: 512px) {
-      body .testimonials_wrap {
-        display: none; } }
+    position: relative;
+    background-color: #10c9c3; }
     body .testimonials_wrap .testimonials {
       text-align: center;
-      padding-top: 170px;
-      margin: 0 auto;
-      width: 100%;
-      height: 100%; }
+      padding-top: 40px;
+      margin: 0 auto; }
       body .testimonials_wrap .testimonials .testimonials_content {
         margin: 0 auto;
-        max-width: 80%;
         text-align: center; }
         body .testimonials_wrap .testimonials .testimonials_content q {
           font-size: 24px;
@@ -311,10 +295,9 @@ body {
         body .testimonials_wrap .testimonials .testimonials_content p {
           font-size: 12px;
           color: #fff;
-          padding: 30px 0 100px 0; }
+          padding: 30px 0 40px 0; }
   body .clients {
-    padding-top: 45px;
-    min-height: 170px; }
+    padding-top: 45px; }
     @media screen and (max-width: 700px) {
       body .clients {
         display: none; } }
