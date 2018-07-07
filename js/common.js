@@ -1,23 +1,28 @@
 $(document).ready(function () {
 
 
-    $(window).on('scroll', function () {
+     function scrollFunction() {
         var scroll = $('.pointer').offset().top;
         var clientHeight = document.documentElement.clientHeight;
         if(scroll < clientHeight)
             $('.pointer').css('opacity', 0);
         else
             $('.pointer').css('opacity', scroll / (clientHeight * 3));
+    };
 
-    });
+    scrollFunction();
+
+    $(window).on('scroll', scrollFunction);
 
     $('.pointer').on('click', function(){
         $('html, body').animate({
             scrollTop: 0
-        }, 500)
+        }, 1000, $.bez([.88,.01,0,.69]));
     });
 
-    $('.top_mnu li a').on('click', function (e) {
+
+
+    $('#navbar-main li a').on('click', function (e) {
         e.preventDefault();
 
         var selector = $(this).attr('href');
@@ -25,11 +30,11 @@ $(document).ready(function () {
 
         $('html, body').animate({
             scrollTop: h.offset().top
-        }, 500)
+        }, 1000, $.bez([.88,.01,0,.69]));
     });
 
     $(".testimonials").slick({
-        adaptiveHeight: true,
+        //adaptiveHeight: true,
         arrows: true,
         centerMode: true,
         dots: true,
@@ -41,7 +46,7 @@ $(document).ready(function () {
     });
 
     // language=JQuery-CSS
-    $('.work').on('click', '.gallery_item img', function () {
+    /*$('.work').on('click', '.gallery_item img', function () {
         if ($(this).css('opacity') == 0) {
             $(this).animate({
                 opacity: 1
@@ -58,7 +63,11 @@ $(document).ready(function () {
                 opacity: 1
             }, 500);
         }
+    });*/
+    $('.work').on('click', '.gallery_item img', function () {
+        $(this).toggle();
     });
+
 
     $('.faq').on('click', 'h4', function(){
         if($(this).next().css('display') == 'none'){
