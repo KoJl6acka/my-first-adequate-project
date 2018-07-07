@@ -8,7 +8,7 @@ $(document).ready(function () {
             $('.pointer').css('opacity', 0);
         else
             $('.pointer').css('opacity', scroll / (clientHeight * 3));
-    };
+    }
 
     scrollFunction();
 
@@ -76,10 +76,10 @@ $(document).ready(function () {
         }
     });
 
-    document.body.onclick = function (event) {
+    /*document.body.onclick = function (event) {
         var t = event.target || event.srcElement;
         console.log(t);
-    }
+    }*/
 
 
     /*$('.gi_1').on('click', function () {
