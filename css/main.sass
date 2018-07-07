@@ -4,6 +4,8 @@ body
   background-color: #f5f5f5
   p, h1, h2, h3, h4, h5, h6
     cursor: default
+  .light
+    background-color: #f8f8f8
 
   .pointer
     opacity: 0
@@ -27,13 +29,15 @@ body
       text-align: center
     .top_mnu
       img
-        margin-left: 2%
       ul
-        margin: 0 40px 0 0
+        float: right
         vertical-align: middle
         text-align: center
         @media screen and (max-width: 1200px)
           margin-left: 0
+        @media screen and (max-width: 767px)
+          margin: 0
+          float: none
       li
         display: inline-block
         vertical-align: middle
