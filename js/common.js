@@ -45,32 +45,41 @@ $(document).ready(function () {
         fade: true
     });
 
-    // language=JQuery-CSS
-    $('.work').on('click', '.gallery_item img', function () {
-        if ($(this).css('opacity') == 0) {
-            $(this).animate({
-                opacity: 1
-            }, 500);
-            $(this).prev().animate({
-                opacity: 0
-            }, 500);
-        }
-        if ($(this).css('opacity') == 1) {
-            $(this).animate({
-                opacity: 0
-            }, 500);
-            $(this).prev().animate({
-                opacity: 1
-            }, 500);
-        }
-    });
     /*$('.work').on('click', '.gallery_item img', function () {
-        $(this).toggleClass('showed');
-        if($(this).prev())
-            $(this).prev().toggleClass('showed');
-        if($(this).next())
-            $(this).next().toggleClass('showed');
+        if ($(this).css('opacity') < 0.9) {
+            $(this).animate({
+                opacity: 1
+            }, 500);
+            $(this).prev().animate({
+                opacity: 0
+            }, 500);
+        }
+        if ($(this).css('opacity') > 0.1) {
+            $(this).animate({
+                opacity: 0
+            }, 500);
+            $(this).prev().animate({
+                opacity: 1
+            }, 500);
+        }
     });*/
+    var isRun = false;
+    $('.work').on('click', '.gallery_item img', function () {
+
+        if(isRun){
+            return
+        }
+        isRun = true;
+        var $el = $(this);
+        $(this).slideToggle(400, function(){
+            $el.siblings().slideToggle();
+            isRun = false;
+        });
+    });
+
+    $('.work').on('click', '.work_btn', function(){
+       $('#hide').slideToggle();
+    });
 
 
     $('.faq').on('click', 'h4', function(){
@@ -85,31 +94,6 @@ $(document).ready(function () {
         console.log(t);
     }*/
 
-
-    /*$('.gi_1').on('click', function () {
-         $('.c_1').toggleClass('flipped');
-    });
-    $('.gi_2').on('click', function () {
-         $('.c_2').toggleClass('flipped');
-    });
-    $('.gi_3').on('click', function () {
-         $('.c_3').toggleClass('flipped');
-    });
-    $('.gi_4').on('click', function () {
-         $('.c_4').toggleClass('flipped');
-    });
-    $('.gi_5').on('click', function () {
-         $('.c_5').toggleClass('flipped');
-    });
-    $('.gi_6').on('click', function () {
-         $('.c_6').toggleClass('flipped');
-    });
-    $('.gi_7').on('click', function () {
-         $('.c_7').toggleClass('flipped');
-    });
-    $('.gi_8').on('click', function () {
-         $('.c_8').toggleClass('flipped');
-    });*/
 
 
 });
