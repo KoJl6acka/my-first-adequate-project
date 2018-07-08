@@ -4,6 +4,8 @@ body {
   background-color: #f5f5f5; }
   body p, body h1, body h2, body h3, body h4, body h5, body h6 {
     cursor: default; }
+  body .pb0 {
+    padding: 0; }
   body .pt30 {
     padding-top: 30px; }
   body .pb30 {
