@@ -1,11 +1,11 @@
+html
+  height: 100%
 body
   font-family: 'Montserrat', medium, sans-serif
   height: 100%
   background-color: #f5f5f5
   p, h1, h2, h3, h4, h5, h6
     cursor: default
-  .aqua
-    background-color: #10c9c3
   .p0
     padding: 0
   .pt30
@@ -15,6 +15,8 @@ body
 
   .light
     background-color: #f8f8f8
+  .aqua
+    background-color: #10c9c3
 
   .pointer
     opacity: 0
@@ -41,7 +43,6 @@ body
     nav
       text-align: center
     .top_mnu
-      img
       ul
         float: right
         vertical-align: middle
@@ -95,47 +96,22 @@ body
     padding-top: 5%
 
 
-  .skills
-    /*@media screen and (max-width: 532px)
-      display: none
-    /*.skills_right
-      h3
-        font-size: 28px
-        margin-bottom: 5%
-      .graph_wrap
-        margin-bottom: 55px
-        h1
-          text-transform: uppercase
-          font-size: 14px
-          display: inline-block
-          margin: 0 30px 0 0
-        p
-          text-transform: uppercase
-          font-size: 12px
-          padding-right: 30px
-          display: inline-block
-          margin: 0
-
-      img
-        position: absolute
-        top: 110px
-
-    .skills_left
-      h3
-        text-align: center
-        font-size: 36px
-        color: #373737
-        padding-bottom: 1%
-        margin: 0 40% 3% 40%
-      p
-        text-align: center
-        font-size: 22px
-        color: #787878
-        margin-bottom: 40px
-        font-family: 'Nunito Sans', regular, sans-serif
-      img
-        width: 16%
-        margin: 0 42% 5% 42%
+  .skills_left
+    h3
+      text-align: center
+      font-size: 36px
+      color: #373737
+      padding-bottom: 1%
+      margin: 0 40% 3% 40%
+    p
+      text-align: center
+      font-size: 22px
+      color: #787878
+      margin-bottom: 40px
+      font-family: 'Nunito Sans', regular, sans-serif
+    img
+      width: 16%
+      margin: 0 42% 5% 42%
 
   .numbers
     background-color: #10c9c3
@@ -158,19 +134,6 @@ body
         background-position: -264px 0
       p
         font-size: 16px
-        //margin: -40% 0 0 35%
-        /*@media screen and (max-width: 1200px)
-          margin: -45% 0 0 35%
-          @media screen and (max-width: 990px)
-            margin: -38% 0 0 35%
-            @media screen and (max-width: 766px)
-              margin: -33% 0 0 35%
-
-      /*h1
-        text-transform: uppercase
-        margin: 3% 0 25% 35%
-        font-size: 11px
-        font-weight: 300
 
 
   .work
@@ -232,6 +195,8 @@ body
         width: 97%
         height: 97%
         position: absolute
+    .work_process_description
+
 
   .services
     padding-top: 5%
@@ -252,54 +217,28 @@ body
           color: #787878
           margin-bottom: 100px
       .services_item
-        .s_it_1
-          background-image: url(../img/servicse_iconset.png)
-          background-position: 0 0
-          width: 44px
-          height: 43px
-          margin: auto
-        .s_it_2
-          background-image: url(../img/servicse_iconset.png)
-          background-position: -92px 0
-          width: 44px
-          height: 43px
-          margin: auto
-        .s_it_3
-          background-image: url(../img/servicse_iconset.png)
-          background-position: -207px 0
-          width: 44px
-          height: 43px
-          margin: auto
-        .s_it_4
-          background-image: url(../img/servicse_iconset.png)
-          background-position: -328px 0
-          width: 44px
-          height: 43px
-          margin: auto
-        .s_it_5
-          background-image: url(../img/servicse_iconset.png)
-          background-position: 0 -78px
-          width: 44px
-          height: 43px
-          margin: auto
-        .s_it_6
-          background-image: url(../img/servicse_iconset.png)
-          background-position: -92px -78px
-          width: 44px
-          height: 43px
-          margin: auto
-        .s_it_7
-          background-image: url(../img/servicse_iconset.png)
-          background-position: -207px -78px
-          width: 44px
-          height: 43px
-          margin: auto
-        .s_it_8
-          background-image: url(../img/servicse_iconset.png)
-          background-position: -328px -78px
-          width: 44px
-          height: 46px
-          margin: auto
+        background-image: url(../img/servicse_iconset.png)
+        width: 44px
+        height: 43px
+        margin: auto
+      .s_it_1
+        background-position: 0 0
+      .s_it_2
+        background-position: -92px 0
+      .s_it_3
+        background-position: -207px 0
+      .s_it_4
+        background-position: -328px 0
+      .s_it_5
+        background-position: 0 -78px
+      .s_it_6
+        background-position: -92px -78px
+      .s_it_7
+        background-position: -207px -78px
+      .s_it_8
+        background-position: -328px -78px
+        height: 45px
+        width: 45px
 
 
   .testimonials
@@ -392,8 +331,6 @@ footer
   padding: 30px 0
   background-color: #000
   color: #fff
-  @media screen and (max-width: 550px)
-    justify-content: flex-end
   .copy
     h3
       margin-top: 0
