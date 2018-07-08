@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
       <change beforePath="$PROJECT_DIR$/css/main.sass" afterPath="$PROJECT_DIR$/css/main.sass" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,21 +20,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.63895303">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="159" column="67" lean-forward="false" selection-start-line="159" selection-start-column="67" selection-end-line="159" selection-end-column="67" />
+                <state relative-caret-position="96">
+                  <caret line="298" column="38" lean-forward="false" selection-start-line="298" selection-start-column="26" selection-end-line="298" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="663">
-                  <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+                <state relative-caret-position="198">
+                  <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -46,8 +47,8 @@
           <file leaf-file-name="main.sass" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/main.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+                <state relative-caret-position="453">
+                  <caret line="436" column="0" lean-forward="true" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -70,6 +71,7 @@
       <find>testimonials_wrap</find>
       <find>top_</find>
       <find>testimonials</find>
+      <find>ifr</find>
     </findStrings>
     <replaceStrings>
       <replace>servi</replace>
@@ -83,9 +85,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/css/main.sass" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/main.sass" />
+        <option value="$PROJECT_DIR$/js/common.js" />
       </list>
     </option>
   </component>
@@ -197,7 +199,7 @@
       <workItem from="1530971925018" duration="1117000" />
       <workItem from="1530975438777" duration="9838000" />
       <workItem from="1530988339080" duration="11158000" />
-      <workItem from="1531038703367" duration="310000" />
+      <workItem from="1531038703367" duration="5646000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1530975226817</created>
@@ -234,11 +236,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530999517213</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="next">
+      <created>1531039287958</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1531039287958</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74287000" />
+    <option name="totallyTimeSpent" value="79623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1315" height="784" extended-state="6" />
@@ -576,26 +585,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state relative-caret-position="96">
+          <caret line="298" column="38" lean-forward="false" selection-start-line="298" selection-start-column="26" selection-end-line="298" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="453">
+          <caret line="436" column="0" lean-forward="true" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="159" column="67" lean-forward="false" selection-start-line="159" selection-start-column="67" selection-end-line="159" selection-end-column="67" />
+        <state relative-caret-position="198">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="38" />
           <folding />
         </state>
       </provider>

@@ -4,7 +4,9 @@ body {
   background-color: #f5f5f5; }
   body p, body h1, body h2, body h3, body h4, body h5, body h6 {
     cursor: default; }
-  body .pb0 {
+  body .aqua {
+    background-color: #10c9c3; }
+  body .p0 {
     padding: 0; }
   body .pt30 {
     padding-top: 30px; }
@@ -157,26 +159,23 @@ body {
          *   margin: -38% 0 0 35%
          *   @media screen and (max-width: 766px)
          *     margin: -33% 0 0 35% */ }
-  body .work .container {
-    width: 100%; }
-    body .work .container .gallery .col-md-3 {
-      padding: 0; }
-    body .work .container .gallery .gallery_item {
-      background-color: #838383;
+  body .work .gallery .col-md-3 {
+    padding: 0; }
+  body .work .gallery .gallery_item {
+    background-color: #838383;
+    cursor: pointer;
+    padding: 0;
+    margin: 0; }
+    body .work .gallery .gallery_item img {
       width: 100%;
-      cursor: pointer;
-      padding: 0;
-      margin: 0; }
-      body .work .container .gallery .gallery_item img {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0; }
-      body .work .container .gallery .gallery_item .showed {
-        opacity: 1;
-        position: static;
-        height: auto; }
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0; }
+    body .work .gallery .gallery_item .showed {
+      opacity: 1;
+      position: static;
+      width: 100%; }
   body .work .work_btn {
     text-align: center;
     min-height: 100px;
@@ -192,8 +191,7 @@ body {
         text-transform: uppercase;
         font-size: 13px; }
   body .work_process {
-    background-color: #E9E9E9;
-    padding-top: 10px; }
+    background-color: #E9E9E9; }
     body .work_process h3 {
       text-align: center;
       font-size: 28px;
@@ -214,8 +212,8 @@ body {
       body .work_process .video_container iframe {
         top: 0;
         left: 10%;
-        width: 80%;
-        height: 80%;
+        width: 97%;
+        height: 97%;
         position: absolute; }
   body .services {
     padding-top: 5%;
@@ -281,23 +279,21 @@ body {
       width: 44px;
       height: 46px;
       margin: auto; }
-  body .testimonials_wrap {
+  body .testimonials {
     position: relative;
-    background-color: #10c9c3; }
-    body .testimonials_wrap .testimonials {
-      text-align: center;
-      padding-top: 40px;
-      margin: 0 auto; }
-      body .testimonials_wrap .testimonials .testimonials_content {
-        margin: 0 auto;
-        text-align: center; }
-        body .testimonials_wrap .testimonials .testimonials_content q {
-          font-size: 24px;
-          color: #fff; }
-        body .testimonials_wrap .testimonials .testimonials_content p {
-          font-size: 12px;
-          color: #fff;
-          padding: 30px 0 40px 0; }
+    text-align: center;
+    padding-top: 40px;
+    margin: 0 auto; }
+    body .testimonials .testimonials_content {
+      margin: 0 auto;
+      text-align: center; }
+      body .testimonials .testimonials_content q {
+        font-size: 24px;
+        color: #fff; }
+      body .testimonials .testimonials_content p {
+        font-size: 12px;
+        color: #fff;
+        padding: 30px 0 40px 0; }
   body .clients {
     padding-top: 45px; }
     @media screen and (max-width: 700px) {
@@ -409,9 +405,6 @@ footer {
 
 footer {
   flex: 0 0 auto; }
-
-.slick-dots {
-  padding-bottom: 60px; }
 
 .slick-prev,
 .slick-next {

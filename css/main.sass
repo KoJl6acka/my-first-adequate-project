@@ -4,8 +4,9 @@ body
   background-color: #f5f5f5
   p, h1, h2, h3, h4, h5, h6
     cursor: default
-
-  .pb0
+  .aqua
+    background-color: #10c9c3
+  .p0
     padding: 0
   .pt30
     padding-top: 30px
@@ -169,27 +170,24 @@ body
 
 
   .work
-    .container
-      width: 100%
-      .gallery
-        .col-md-3
-          padding: 0
-        .gallery_item
-          background-color: #838383
+    .gallery
+      .col-md-3
+        padding: 0
+      .gallery_item
+        background-color: #838383
+        cursor: pointer
+        padding: 0
+        margin: 0
+        img
           width: 100%
-          cursor: pointer
-          padding: 0
-          margin: 0
-          img
-            width: 100%
-            position: absolute
-            top: 0
-            left: 0
-            opacity: 0
-          .showed
-            opacity: 1
-            position: static
-            height: auto
+          position: absolute
+          top: 0
+          left: 0
+          opacity: 0
+        .showed
+          opacity: 1
+          position: static
+          width: 100%
     .work_btn
       text-align: center
       min-height: 100px
@@ -208,7 +206,6 @@ body
 
   .work_process
     background-color: #E9E9E9
-    padding-top: 10px
     h3
       text-align: center
       font-size: 28px
@@ -229,8 +226,8 @@ body
       iframe
         top: 0
         left: 10%
-        width: 80%
-        height: 80%
+        width: 97%
+        height: 97%
         position: absolute
 
   .services
@@ -301,23 +298,22 @@ body
           height: 46px
           margin: auto
 
-  .testimonials_wrap
+
+  .testimonials
     position: relative
-    background-color: #10c9c3
-    .testimonials
-      text-align: center
-      padding-top: 40px
+    text-align: center
+    padding-top: 40px
+    margin: 0 auto
+    .testimonials_content
       margin: 0 auto
-      .testimonials_content
-        margin: 0 auto
-        text-align: center
-        q
-          font-size: 24px
-          color: #fff
-        p
-          font-size: 12px
-          color: #fff
-          padding: 30px 0 40px 0
+      text-align: center
+      q
+        font-size: 24px
+        color: #fff
+      p
+        font-size: 12px
+        color: #fff
+        padding: 30px 0 40px 0
 
   .clients
     padding-top: 45px
@@ -438,8 +434,7 @@ footer
 footer
   flex: 0 0 auto
 
-.slick-dots
-  padding-bottom: 60px
+
 
 .slick-prev,
 .slick-next
