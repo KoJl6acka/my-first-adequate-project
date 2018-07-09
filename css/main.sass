@@ -1,6 +1,4 @@
-html
-  height: 100%
-body
+html, body
   font-family: 'Montserrat', medium, sans-serif
   height: 100%
   background-color: #f5f5f5
@@ -131,27 +129,26 @@ body
       font-size: 16px
 
 
-  .work
+  .heads
     background-color: #f5f5f5
-    .gallery_item
+    .heads_item
       cursor: pointer
       position: relative
       transition: 0.6s
       transform-style: preserve-3d
-
     img
       backface-visibility: hidden
       opacity: 0
       width: 100%
       top: 0
       transition: opacity 1s
+      z-index: -1
       &:nth-of-type(2)
         position: absolute
-        z-index: -1
     .active
       opacity: 1
       z-index: 1
-    .work_btn
+    .heads_btn
       text-align: center
       min-height: 100px
       background-color: #f5f5f5
@@ -167,6 +164,12 @@ body
   .process
     background-color: #E9E9E9
     text-align: center
+    .process_description
+      padding: 6% 0
+      @media screen and (max-width: 1010px)
+        padding: 2% 0
+      div
+        margin: auto
     h3
       font-size: 28px
       color: #373737
@@ -176,17 +179,19 @@ body
       color: #787878
       margin-bottom: 40px
       font-family: 'Nunito Sans', regular, sans-serif
-    .video_container
+    .process_videoContainer
       position: relative
       padding-bottom: 56.25%
-      padding-top: 30px
       height: 0
       overflow: hidden
+      margin: 0 auto
       iframe
         top: 0
-        left: 10%
-        width: 97%
-        height: 97%
+        left: 0
+        bottom: 0
+        top: 0
+        width: 100%
+        height: 100%
         position: absolute
 
 
@@ -347,14 +352,6 @@ footer
 .slick-prev
   left: 0
 
-.slick-dots
-  background-color: #10c9c3
-  li
-    z-index: 4
-    button::before
-      color: #fff
-      opacity: 0.5
-      font-size: 5px
 
 .slick-dots
   li.slick-active
