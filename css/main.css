@@ -93,59 +93,56 @@ body {
       body header {
         background: none;
         background-color: #e9e9e9; } }
-  body .about {
-    padding-top: 5%; }
-  body .skills_left h3 {
-    text-align: center;
-    font-size: 36px;
-    color: #373737;
-    padding-bottom: 1%;
-    margin: 0 40% 3% 40%; }
-  body .skills_left p {
-    text-align: center;
-    font-size: 22px;
-    color: #787878;
-    margin-bottom: 40px;
-    font-family: "Nunito Sans", regular, sans-serif; }
-  body .skills_left img {
-    width: 16%;
-    margin: 0 42% 5% 42%; }
-  body .numbers {
-    background-color: #10c9c3;
-    color: #fff; }
-    body .numbers .number_item_wrap {
-      margin: 0 auto;
-      text-align: center; }
-      body .numbers .number_item_wrap .number_img {
-        display: inline-block;
-        background-image: url(../img/iconset_numbers.png);
-        height: 41px;
-        width: 41px; }
-      body .numbers .number_item_wrap .number_img_1 {
-        background-position: 0 0; }
-      body .numbers .number_item_wrap .number_img_2 {
-        background-position: -85px 0; }
-      body .numbers .number_item_wrap .number_img_3 {
-        background-position: -176px 0; }
-      body .numbers .number_item_wrap .number_img_4 {
-        background-position: -264px 0; }
-      body .numbers .number_item_wrap p {
-        font-size: 16px; }
+  body .about_txt {
+    text-align: center; }
+    body .about_txt h3 {
+      font-size: 36px;
+      color: #373737;
+      margin: 30px; }
+    body .about_txt p {
+      font-size: 22px;
+      color: #787878;
+      margin-bottom: 30px;
+      font-family: "Nunito Sans", regular, sans-serif; }
+    body .about_txt img {
+      width: 16%;
+      margin: 0 auto; }
+  body .number_item_wrap {
+    color: #fff;
+    margin: 0 auto;
+    text-align: center; }
+    body .number_item_wrap .number_img {
+      display: inline-block;
+      background-image: url(../img/iconset_numbers.png);
+      height: 41px;
+      width: 41px; }
+    body .number_item_wrap .number_img_1 {
+      background-position: 0 0; }
+    body .number_item_wrap .number_img_2 {
+      background-position: -85px 0; }
+    body .number_item_wrap .number_img_3 {
+      background-position: -176px 0; }
+    body .number_item_wrap .number_img_4 {
+      background-position: -264px 0; }
+    body .number_item_wrap p {
+      font-size: 16px; }
   body .work {
     background-color: #f5f5f5; }
-    body .work .gallery .col-md-3 {
-      padding: 0; }
-    body .work .gallery .gallery_item {
+    body .work .gallery_item {
       cursor: pointer;
-      padding: 0;
-      margin: 0; }
-      body .work .gallery .gallery_item img {
-        min-height: 0;
-        padding: 0;
-        margin: 0;
-        width: 100%; }
-        body .work .gallery .gallery_item img:nth-of-type(2) {
-          display: none; }
+      position: relative;
+      transition: 0.6s;
+      transform-style: preserve-3d; }
+    body .work img {
+      backface-visibility: hidden;
+      opacity: 0;
+      width: 100%;
+      top: 0;
+      transition: opacity 1s; }
+      body .work img:nth-of-type(2) {
+        position: absolute; }
+    body .work .active {
+      opacity: 1 !important; }
     body .work .work_btn {
       text-align: center;
       min-height: 100px;
@@ -153,87 +150,76 @@ body {
       body .work .work_btn button {
         width: 100%;
         height: 100px;
-        border: none; }
-        body .work .work_btn button a {
-          color: #8e8e8e;
-          text-align: center;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 13px; }
+        border: none;
+        text-transform: uppercase; }
   body #hide {
     display: none; }
-  body .work_process {
-    background-color: #E9E9E9; }
-    body .work_process h3 {
-      text-align: center;
+  body .process {
+    background-color: #E9E9E9;
+    text-align: center; }
+    body .process h3 {
       font-size: 28px;
       color: #373737;
       margin-bottom: 40px; }
-    body .work_process p {
-      text-align: center;
+    body .process p {
       font-size: 16px;
       color: #787878;
       margin-bottom: 40px;
       font-family: "Nunito Sans", regular, sans-serif; }
-    body .work_process .video_container {
+    body .process .video_container {
       position: relative;
       padding-bottom: 56.25%;
       padding-top: 30px;
       height: 0;
       overflow: hidden; }
-      body .work_process .video_container iframe {
+      body .process .video_container iframe {
         top: 0;
         left: 10%;
         width: 97%;
         height: 97%;
         position: absolute; }
   body .services {
-    padding-top: 5%;
     background-color: #f9f9f9; }
-    body .services .services_row .services_txt h1 {
+    body .services h1 {
       text-transform: uppercase;
       text-align: center;
       margin-top: 30px;
       margin-bottom: 18px;
       font-size: 12px;
       color: #191919; }
-    body .services .services_row .services_txt p {
+    body .services p {
       text-align: center;
       font-size: 16px;
       font-family: "Nunito Sans", regular, sans-serif;
-      color: #787878;
-      margin-bottom: 100px; }
-    body .services .services_row .services_item {
+      color: #787878; }
+    body .services .services_item {
       background-image: url(../img/servicse_iconset.png);
       width: 44px;
       height: 43px;
       margin: auto; }
-    body .services .services_row .s_it_1 {
+    body .services .s_it_1 {
       background-position: 0 0; }
-    body .services .services_row .s_it_2 {
+    body .services .s_it_2 {
       background-position: -92px 0; }
-    body .services .services_row .s_it_3 {
+    body .services .s_it_3 {
       background-position: -207px 0; }
-    body .services .services_row .s_it_4 {
+    body .services .s_it_4 {
       background-position: -328px 0; }
-    body .services .services_row .s_it_5 {
+    body .services .s_it_5 {
       background-position: 0 -78px; }
-    body .services .services_row .s_it_6 {
+    body .services .s_it_6 {
       background-position: -92px -78px; }
-    body .services .services_row .s_it_7 {
+    body .services .s_it_7 {
       background-position: -207px -78px; }
-    body .services .services_row .s_it_8 {
+    body .services .s_it_8 {
       background-position: -328px -78px;
       height: 45px;
       width: 45px; }
   body .testimonials {
-    position: relative;
     text-align: center;
-    padding-top: 40px;
     margin: 0 auto; }
     body .testimonials .testimonials_content {
-      margin: 0 auto;
-      text-align: center; }
+      margin: 0 auto; }
       body .testimonials .testimonials_content q {
         font-size: 24px;
         color: #fff; }
@@ -241,26 +227,24 @@ body {
         font-size: 12px;
         color: #fff;
         padding: 30px 0 40px 0; }
-  body .clients {
-    padding-top: 45px; }
-    @media screen and (max-width: 700px) {
-      body .clients {
-        display: none; } }
-    body .clients .client {
-      background-image: url(../img/clients_iconset.png);
-      height: 72px;
-      width: 152px;
-      margin: 0 auto; }
-    body .clients .client_1 {
-      background-position: 21px 0; }
-    body .clients .client_2 {
-      background-position: -117px 0; }
-    body .clients .client_3 {
-      background-position: -286px 0; }
-    body .clients .client_4 {
-      background-position: -454px 0; }
-    body .clients .client_5 {
-      background-position: 21px 0; }
+  @media screen and (max-width: 700px) {
+    body .clients {
+      display: none; } }
+  body .clients .client {
+    background-image: url(../img/clients_iconset.png);
+    height: 72px;
+    width: 152px;
+    margin: 0 auto; }
+  body .clients .client_1 {
+    background-position: 21px 0; }
+  body .clients .client_2 {
+    background-position: -117px 0; }
+  body .clients .client_3 {
+    background-position: -286px 0; }
+  body .clients .client_4 {
+    background-position: -454px 0; }
+  body .clients .client_5 {
+    background-position: 21px 0; }
   body .project {
     background-color: #f5f5f5;
     text-align: center; }
@@ -307,20 +291,16 @@ body {
 
 footer {
   text-align: center;
-  padding: 30px 0;
   background-color: #000;
   color: #fff; }
-  footer .copy h3 {
+  footer h3 {
     margin-top: 0;
     color: #e9e9e9;
     font-size: 18px; }
-  footer .copy p {
+  footer p {
     color: #9b9b9b;
     font-size: 15px;
     font-family: "Nunito Sans", regular, sans-serif; }
-  footer .contact h3 {
-    margin: 0;
-    padding: 0; }
   footer a {
     text-decoration: none;
     font-family: "Nunito Sans", regular, sans-serif;
