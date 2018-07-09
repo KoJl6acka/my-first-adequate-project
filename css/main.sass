@@ -147,8 +147,10 @@ body
       transition: opacity 1s
       &:nth-of-type(2)
         position: absolute
+        z-index: -1
     .active
-      opacity: 1!important
+      opacity: 1
+      z-index: 1
     .work_btn
       text-align: center
       min-height: 100px

@@ -140,9 +140,11 @@ body {
       top: 0;
       transition: opacity 1s; }
       body .work img:nth-of-type(2) {
-        position: absolute; }
+        position: absolute;
+        z-index: -1; }
     body .work .active {
-      opacity: 1 !important; }
+      opacity: 1;
+      z-index: 1; }
     body .work .work_btn {
       text-align: center;
       min-height: 100px;
