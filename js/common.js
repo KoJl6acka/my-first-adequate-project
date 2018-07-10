@@ -64,4 +64,25 @@ $(document).ready(function () {
         fade: true
     });
 
+    $('#home').on('click', '.popup_open_button', function(){
+       $('.popup').fadeIn().addClass('disabled');
+    });
+
+    $('.popup').on('click','.popup_close', function(){
+        $('.popup').fadeOut();
+    });
+
+    $('.popup').on('click', function(e){
+        var $popup = $('.popup_form_wrap');
+        if (e.target != $popup[0] && $popup.has(e.target).length === 0)
+            $('.popup').fadeOut();
+    });
+
+    setTimeout(function(){
+        if($('.popup').hasClass('disabled'))
+            return
+        $('.popup').fadeIn();
+    },5000);
+
+
 });

@@ -13,9 +13,6 @@
 <body>
 
 
-<div class="pointer">
-</div>
-
 
 <header id="home">
   <nav class="navbar navbar-default container-fluid light">
@@ -49,11 +46,11 @@
       </div>
       <div class="col-md-1 col-sm-0"></div>
       <div class="col-md-6 col-xs-0"></div>
-      <div class="col-md-6 col-xs-12 motto">
+      <div class="col-md-6 col-xs-12">
         <h6>we are as bald as <br>
           you are</h6>
-        <button class="motto_button">
-          popup
+        <button class="popup_open_button">
+          sign up
         </button>
       </div>
     </div>
@@ -395,6 +392,23 @@
   </div>
 </footer>
 
+
+<div class="pointer">
+</div>
+
+
+<div class="popup">
+  <div class="popup_form_wrap light">
+    <div class="popup_close"></div>
+    <p>If you want to receive news from us,<br> simply fill out this form</p>
+    <form class="pt30 pb30" action="">
+      <input id="inp_name_popup" type="text" name="name" placeholder="Your Name">
+      <input id="inp_Email_popup" type="email" name="e-mail" placeholder="Your Email">
+      <textarea name="comment" cols="30" rows="5" placeholder="Your Comment"></textarea>
+      <input class="submit" type="Submit" value="send message">
+    </form>
+  </div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

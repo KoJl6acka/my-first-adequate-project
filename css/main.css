@@ -4,6 +4,8 @@ html, body {
   background-color: #f5f5f5; }
   html p, html h1, html h2, html h3, html h4, html h5, html h6, body p, body h1, body h2, body h3, body h4, body h5, body h6 {
     cursor: default; }
+  html .w-100, body .w-100 {
+    width: 100%; }
   html .p0, body .p0 {
     padding: 0; }
   html .pt30, body .pt30 {
@@ -14,19 +16,6 @@ html, body {
     background-color: #f8f8f8; }
   html .aqua, body .aqua {
     background-color: #10c9c3; }
-  html .pointer, body .pointer {
-    opacity: 0;
-    width: 50px;
-    height: 70px;
-    float: right;
-    position: fixed;
-    bottom: 10px;
-    right: 5px;
-    z-index: 1000;
-    cursor: pointer;
-    background-image: url(../img/pointer.png);
-    background-size: contain;
-    background-repeat: no-repeat; }
   html header, body header {
     background-color: #e9e9e9;
     background-image: url(../img/Bald_top.png);
@@ -34,8 +23,10 @@ html, body {
     background-position: 12% bottom;
     background-size: 50%;
     text-align: center; }
-    html header .w-100, body header .w-100 {
-      width: 100%; }
+    @media screen and (max-width: 990px) {
+      html header, body header {
+        background: none;
+        background-color: #e9e9e9; } }
     html header nav, body header nav {
       text-align: center; }
     html header .top_mnu ul, body header .top_mnu ul {
@@ -70,26 +61,20 @@ html, body {
       font-size: 46px;
       text-transform: uppercase;
       padding: 1% 0; }
-    html header .motto, body header .motto {
-      text-align: center; }
-      html header .motto h6, body header .motto h6 {
-        font-size: 36px;
-        text-transform: uppercase;
-        margin-top: 21%; }
-      html header .motto .motto_button, body header .motto .motto_button {
-        margin: 12% 0 21% 0;
-        text-align: center;
-        border: 0;
-        text-transform: uppercase;
-        font-size: 14px;
-        color: #ffffff;
-        background-color: #10c9c3;
-        text-decoration: none;
-        padding: 21px 42px; }
-    @media screen and (max-width: 990px) {
-      html header, body header {
-        background: none;
-        background-color: #e9e9e9; } }
+    html header h6, body header h6 {
+      font-size: 36px;
+      text-transform: uppercase;
+      margin-top: 21%; }
+    html header .popup_open_button, body header .popup_open_button {
+      margin: 12% 0 21% 0;
+      text-align: center;
+      border: 0;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #fff;
+      background-color: #10c9c3;
+      text-decoration: none;
+      padding: 21px 42px; }
   html .about_txt, body .about_txt {
     text-align: center; }
     html .about_txt h3, body .about_txt h3 {
@@ -182,6 +167,7 @@ html, body {
         top: 0;
         left: 0;
         bottom: 0;
+        right: 0;
         width: 100%;
         height: 100%;
         position: absolute; }
@@ -317,6 +303,89 @@ footer {
       color: #e9e9e9; }
   footer li {
     list-style-type: none; }
+
+.pointer {
+  opacity: 0;
+  width: 50px;
+  height: 70px;
+  float: right;
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  z-index: 1000;
+  cursor: pointer;
+  background-image: url(../img/pointer.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  cursor: pointer; }
+  .popup .popup_form_wrap {
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    font-family: "Nunito Sans", regular, sans-serif;
+    color: #787878;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default; }
+    .popup .popup_form_wrap p {
+      padding-top: 30px;
+      font-size: 30px; }
+    .popup .popup_form_wrap form {
+      font-size: 15px;
+      outline: none; }
+      .popup .popup_form_wrap form input {
+        margin: 8px;
+        width: 80%;
+        outline: none;
+        border: none;
+        padding: 15px; }
+      .popup .popup_form_wrap form textarea {
+        margin: 5px;
+        outline: none;
+        border: none;
+        width: 80%;
+        padding: 15px;
+        resize: none; }
+      .popup .popup_form_wrap form .submit {
+        color: #fff;
+        background-color: #10c9c3;
+        text-transform: uppercase; }
+    .popup .popup_form_wrap .popup_close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer; }
+      .popup .popup_form_wrap .popup_close:before {
+        content: "";
+        background-color: #10c9c3;
+        position: absolute;
+        height: 1px;
+        width: 30px;
+        top: 11px;
+        left: -4px;
+        transform: rotate(-45deg); }
+      .popup .popup_form_wrap .popup_close:after {
+        content: "";
+        background-color: #10c9c3;
+        position: absolute;
+        height: 1px;
+        width: 30px;
+        top: 11px;
+        left: -4px;
+        transform: rotate(45deg); }
 
 .slick-prev,
 .slick-next {

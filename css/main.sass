@@ -4,6 +4,9 @@ html, body
   background-color: #f5f5f5
   p, h1, h2, h3, h4, h5, h6
     cursor: default
+
+  .w-100
+    width: 100%
   .p0
     padding: 0
   .pt30
@@ -16,19 +19,7 @@ html, body
   .aqua
     background-color: #10c9c3
 
-  .pointer
-    opacity: 0
-    width: 50px
-    height: 70px
-    float: right
-    position: fixed
-    bottom: 10px
-    right: 5px
-    z-index: 1000
-    cursor: pointer
-    background-image: url(../img/pointer.png)
-    background-size: contain
-    background-repeat: no-repeat
+
   header
     background-color: #e9e9e9
     background-image: url(../img/Bald_top.png)
@@ -36,8 +27,11 @@ html, body
     background-position: 12% bottom
     background-size: 50%
     text-align: center
-    .w-100
-      width: 100%
+    @media screen and (max-width: 990px)
+      background: none
+      background-color: #e9e9e9
+
+
     nav
       text-align: center
     .top_mnu
@@ -69,25 +63,20 @@ html, body
       font-size: 46px
       text-transform: uppercase
       padding: 1% 0
-    .motto
+    h6
+      font-size: 36px
+      text-transform: uppercase
+      margin-top: 21%
+    .popup_open_button
+      margin: 12% 0 21% 0
       text-align: center
-      h6
-        font-size: 36px
-        text-transform: uppercase
-        margin-top: 21%
-      .motto_button
-        margin: 12% 0 21% 0
-        text-align: center
-        border: 0
-        text-transform: uppercase
-        font-size: 14px
-        color: #ffffff
-        background-color: #10c9c3
-        text-decoration: none
-        padding: 21px 42px
-    @media screen and (max-width: 990px)
-      background: none
-      background-color: #e9e9e9
+      border: 0
+      text-transform: uppercase
+      font-size: 14px
+      color: #fff
+      background-color: #10c9c3
+      text-decoration: none
+      padding: 21px 42px
 
 
 
@@ -299,6 +288,7 @@ html, body
         background-color: #10c9c3
         text-transform: uppercase
 
+
   .faq
     padding: 0 0 20px 0
     h1
@@ -337,6 +327,88 @@ footer
   li
     list-style-type: none
 
+.pointer
+  opacity: 0
+  width: 50px
+  height: 70px
+  float: right
+  position: fixed
+  bottom: 10px
+  right: 5px
+  z-index: 1000
+  cursor: pointer
+  background-image: url(../img/pointer.png)
+  background-size: contain
+  background-repeat: no-repeat
+
+.popup
+  display: none
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0,0,.3)
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 9000
+  cursor: pointer
+  .popup_form_wrap
+    width: 70%
+    position: absolute
+    text-align: center
+    font-family: 'Nunito Sans', regular, sans-serif
+    color: #787878
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    cursor: default
+    p
+      padding-top: 30px
+      font-size: 30px
+    form
+      font-size: 15px
+      outline: none
+      input
+        margin: 8px
+        width: 80%
+        outline: none
+        border: none
+        padding: 15px
+      textarea
+        margin: 5px
+        outline: none
+        border: none
+        width: 80%
+        padding: 15px
+        resize: none
+      .submit
+        color: #fff
+        background-color: #10c9c3
+        text-transform: uppercase
+    .popup_close
+      position: absolute
+      top: 15px
+      right: 15px
+      width: 25px
+      height: 25px
+      cursor: pointer
+      &:before
+        content: ""
+        background-color: #10c9c3
+        position: absolute
+        height: 1px
+        width: 30px
+        top: 11px
+        left: -4px
+        transform: rotate(-45deg)
+      &:after
+        content: ""
+        background-color: #10c9c3
+        position: absolute
+        height: 1px
+        width: 30px
+        top: 11px
+        left: -4px
+        transform: rotate(45deg)
 
 
 .slick-prev,
