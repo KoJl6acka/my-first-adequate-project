@@ -74,13 +74,13 @@ $(document).ready(function () {
 
     $('.popup').on('click', function(e){
         var $popup = $('.popup_form_wrap');
-        if (e.target != $popup[0] && $popup.has(e.target).length === 0)
+        if (e.target != $popup[0] && $popup.has(e.target).length === 0) //не окно или его доч эл
             $('.popup').fadeOut();
     });
 
     setTimeout(function(){
         if($('.popup').hasClass('disabled'))
-            return
+            return;
         $('.popup').fadeIn();
     },5000);
 
